@@ -20,9 +20,19 @@ def check_number(num, number):
     except ValueError:
         print("\n🔢Please just enter valid number!")
 
+def check_answer(answer):
+    if answer.strip().lower() == 'yes':
+        number = random.randint(1, 100)
+        return number
+    elif answer.strip().lower() == 'no':
+        print("\nThanks for playing ☺️.")
+        return answer
+    else:
+        print("\nPlease enter valid answer!")
+        return None
 
 def guess_number():
-    number = random.randint(0, 100)
+    number = random.randint(1, 100)
     while True:
         num = input("number: ")
         num = check_number(num, number)
@@ -32,17 +42,15 @@ def guess_number():
         else:
             while True:
                 answer =input("\nWould you like to play again? (yes/no) ")
-                if answer.strip().lower() == 'yes':
-                    number  = random.randint(0, 100)
-                    break
-                elif answer.strip().lower() == 'no':
-                    print("\nThanks for playing.")
-                    return answer
-                else:
-                    print("\nPlease enter valid answer.")
-                    continue
-       
+                answer = check_answer(answer)
 
+                if not answer:
+                    continue
+                elif type(answer) == int:
+                    break
+                elif type(answer) == str:
+                    return answer
+       
 if __name__ == '__main__':
     guess_number()
 
