@@ -19,19 +19,23 @@ while True:
 
     if operator.strip() == '+':
         answer = plus_operator(number1, number2)
-        print(f"Answer: {answer}")
+        if answer:
+            print(f"\nAnswer: {answer}")
     
     elif operator.strip() == '-':
         answer = minus_operator(number1, number2)
-        print(f"Answer: {answer}")
+        if answer:
+            print(f"\nAnswer: {answer}")
 
     elif operator.strip() == '*':
         answer = time_operator(number1, number2)
-        print(f"Answer: {answer}")
+        if answer:
+            print(f"\nAnswer: {answer}")
 
     elif operator.strip() == '/':
         answer = divided_operator(number1, number2)
-        print(f"Answer: {answer}")
+        if answer:
+            print(f"\nAnswer: {answer}")
     
     elif operator.strip().lower() == 'q':
         print("\nHave a good day!")
