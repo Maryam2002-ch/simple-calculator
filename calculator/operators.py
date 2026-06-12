@@ -39,5 +39,9 @@ def divided_operator(number1, number2):
         print("\nPlease enter valid numbers!")
         return None
     else:
-        answer =  number1/number2
+        try:
+            answer =  number1/number2
+        except ZeroDivisionError:
+            print("\nCan not division by zero!")
+            return None
         return answer
