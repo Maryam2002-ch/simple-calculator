@@ -3,8 +3,8 @@
 def plus_operator(number1, number2):
     """plus two numbers"""
     try:
-        number1 = int(number1)
-        number2 = int(number2)
+        number1 = float(number1)
+        number2 = float(number2)
     except ValueError:
         print("\nPlease enter valid numbers!")
         return None
@@ -16,8 +16,8 @@ def plus_operator(number1, number2):
 def minus_operator(number1, number2):
     """minus two numbers"""
     try:
-        number1 = int(number1)
-        number2 = int(number2)
+        number1 = float(number1)
+        number2 = float(number2)
     except ValueError:
         print("\nPlease enter valid numbers!")
         return None
@@ -29,8 +29,8 @@ def minus_operator(number1, number2):
 def time_operator(number1, number2):
     """multiply to numbers"""
     try:
-        number1 = int(number1)
-        number2 = int(number2)
+        number1 = float(number1)
+        number2 = float(number2)
     except ValueError:
         print("\nPlease enter valid numbers!")
         return None
@@ -42,8 +42,8 @@ def time_operator(number1, number2):
 def divided_operator(number1, number2):
     """divide two numbers"""
     try:
-        number1 = int(number1)
-        number2 = int(number2)
+        number1 = float(number1)
+        number2 = float(number2)
     except ValueError:
         print("\nPlease enter valid numbers!")
         return None
