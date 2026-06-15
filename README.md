@@ -11,13 +11,6 @@ A friendly command-line calculator that adds, subtracts, multiplies, and divides
 - Quit option at any stage (type 'q')
 - Clean and readable error messages
 
-## 📁 Project Structure
-
-simple-calculator/
-├── calculator.py # User interface and main loop
-├── operators.py # Operation functions (+, -, *, /)
-└── README.md # Project documentation
-
 ## 🚀 How to Run
 
 1. Make sure you have Python installed (version 3.6+)
@@ -53,5 +46,7 @@ Error handling: try/except for invalid inputs
 ZeroDivisionError: Protected against division by zero
 
 Clean exit: Press 'q' at any prompt to quit
+
+---
 
 ⭐ If you found this project helpful, give it a star!
