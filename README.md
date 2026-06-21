@@ -28,8 +28,8 @@ Enter second number: 5
 
 ✅ Answer: 50.0
 
-Enter first number: 20
-Enter operator (+, -, *, /): /
+Enter first number: 20 <br>
+Enter operator (+, -, *, /): / <br>
 Enter second number: 0
 
 ❌ Cannot divide by zero!
