@@ -22,8 +22,8 @@ python calculator.py
 ## 📝 Example Gameplay
 This is a simple calculator. Enter 'q' to quit at any time.
 
-Enter first number: 10
-Enter operator (+, -, *, /): *
+Enter first number: 10 <br>
+Enter operator (+, -, *, /): * <br>
 Enter second number: 5
 
 ✅ Answer: 50.0
